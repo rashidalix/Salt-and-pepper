@@ -1,0 +1,701 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: inter;
+    color: var(--white);
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --red: #ed1c24;
+  --gray:#ffffffb3;
+  --lightblack:#3b3b3f;
+  --dimlightblack:#0f0f0f;
+  --green:#28a745;
+
+}
+@font-face {
+    font-family: apercu;
+    src: url(style/Apercu-font/Apercu-regular.otf);
+}
+@font-face {
+    font-family: butler;
+    src: url(style/bulter-font/Butler_Light.otf);
+}
+@font-face {
+    font-family: futurak;
+    src: url(style/futurak.ttf);
+}
+@font-face {
+    font-family: inter;
+    src: url(style/Inter-VariableFont_opsz\,wght.ttf);
+}
+body{
+    background-color:var(--black);
+}
+body a{
+    text-decoration: none;
+}
+/* Header Started */
+.logo-image{
+    width: 180px;
+    height: 80px;
+    cursor: pointer;
+}
+header{
+    background-color: var(--black);
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 75px;
+}
+.nav-items{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.nav-item{
+    padding-top: 14px;
+    font-size: 1.6rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.nav-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  align-items: center;
+}
+
+.franchise-btn{
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 15px;
+    border: 1px solid var(--white);
+    cursor: pointer;
+}
+.order-btn{
+
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.5rem;
+    border-radius: 30px;
+    padding: 18px 15px;
+    border: none;
+    cursor: pointer;
+}
+.arrow-right{
+    padding: 5px 7px;
+    background-color: var(--white);
+    color: var(--red);
+    border-radius: 50px;
+}
+/* Header Ended */
+
+
+
+/* Carousel Started */
+.Carousel-img{
+    width: 100%;
+}
+/* Carousel Ended */
+
+/* Brand Section's CSS Started */
+.brand-container{
+    width: 100%;
+    height: 90vh;
+    color: var(--white);
+}
+.brand-heading{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+}
+.brand-name{
+    font-family: futurak;
+    font-size: 5rem;
+}
+.brand-para{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--gray);
+    margin-top: 10px;
+
+}
+.brand-order-section{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.brand-order{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.brand-img{
+    width: 260px;
+    height: 140px;
+    padding: 0px 19px;
+    background-color: var(--white);
+    cursor: pointer;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.brand-order-btn{
+    margin: 24px 43px 20px;
+    font-size: 1.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid #4d4d4d;
+    width: 174px;
+    height: 50px;
+    border-radius: 50px ;
+    cursor: pointer;
+}
+/* Brand Section's CSS Ended */
+
+
+
+/* Franchise Section's CSS Started */
+.franchise-section{
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 60px 60px;
+    background-color: var(--dimlightblack);
+    height: auto;
+}
+.franchise-bg-img{
+    position: absolute;
+    right:30px;
+    top: 40px;
+}
+.franchise-heading{
+   
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 4.9rem;
+    letter-spacing: 3px;
+    font-family: butler;
+}
+.brand-name-txt{
+    font-family: futurak;
+    font-size: 5rem;
+    font-weight: 300;
+}
+.franchise-section-para{
+    text-align: center;
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-family: apercu;
+    letter-spacing: 1px;
+}
+.franchise-city{
+    color: var(--red);
+    letter-spacing: 5px;
+    font-family: apercu;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.franchise-name{
+    font-size: 2.8rem;
+    font-family: apercu;
+    font-weight: 100;
+}
+.franchise-txt{
+    font-family: futurak;
+}
+.franchise-contact{
+    color: var(--gray);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.get-direction{
+    font-size: 1.3rem;
+    background-color: var(--dimlightblack);
+    color: var(--white);
+    border: 1px solid #4d4d4d;
+    width: 174px;
+    height: 50px;
+    border-radius: 50px ;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.fa-arrow-two{
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: var(--white);
+    color: var(--red);
+    border-radius: 50px;
+}
+
+.franchise-content{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+}
+.franchise-details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+
+
+}
+.franchise-images{
+    flex-grow:1;
+}
+
+.franchise-image{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.faisalabad-layout .franchise-images {
+    width: 255px;
+}
+/* Franchise Section's CSS Completed */
+
+
+/* Express Section's CSS Started */
+
+.express-section{
+    padding: 80px 20px;
+}
+.express-heading{    
+    text-align: center;
+    font-family: butler;
+    font-size: 5.6rem;
+}
+.express-txt{
+    font-family: futurak;
+    font-weight: 300;
+}
+.exress-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.express-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+.express-img{
+    width: 370px ;
+    height: 250px;
+    object-fit: cover;
+
+}
+.express-city{
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 300;
+}
+.express-h1-text{
+    font-size: 2.3rem;
+    font-family: apercu;
+    font-weight: 300;
+}
+.express-futurak{
+    font-family: futurak;
+    font-weight: 300;
+}
+.express-contact{
+    color: var(--gray);
+    width: 380px;
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: apercu;
+    padding-bottom: 20px;
+}
+.express-btn{
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid #4d4d4d;
+    width: 170px;
+    height: 55px;
+    border-radius: 50px ;
+    cursor: pointer;
+    margin-top: auto;
+    font-family: inter;
+
+}
+.fa-arrow-three{
+    margin-left: 10px;
+    padding: 8px 10px 7px 7px;
+    font-size: 1.6rem;
+    background-color: var(--white);
+    color: var(--red);
+    border-radius: 50px;
+    transform: rotate(-35deg);
+
+}
+/* Express Section's CSS Ended */
+
+
+/* Village-Franchise Section's CSS Started */
+.village-section{
+    padding: 40px 0;
+    background-color: var(--dimlightblack);
+}
+.village-franchise-heading{
+    text-align: center;
+    font-size: 4.8rem;
+    font-family: butler;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+
+}
+.village-franchise-txt{
+    font-family: futurak;
+    font-weight: 300;
+}
+.village-franchise-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+.village-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 70px 10px;
+}
+.left-images{
+    max-width: 620px;
+    
+}
+.left-image{
+    width: 100%;
+    min-width: 100%;
+}
+.right-heading{
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--red);
+    font-weight: 300;
+    font-family: apercu;
+}
+.right-text{
+    font-family: apercu;
+    font-weight: 200;
+    font-size: 3rem;
+}
+.right-futurak{
+    font-family: futurak;
+    font-weight: 300;
+}
+.village-franchise-contact{
+    color: var(--gray);
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+.village-btn{
+    font-size: 1.2rem;
+    background-color: #28a745;
+    color: var(--white);
+    border: 1px solid #28a745;
+    width: 170px;
+    height: 50px;
+    border-radius: 50px ;
+    cursor: pointer;
+    font-family: inter;
+    margin-top: 40px;
+}
+.village-btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.fa-arrow-four{
+    margin-left: 10px;
+    padding: 10px 10px;
+    background-color: var(--white);
+    color: var(--green);
+    border-radius: 50px;
+    font-size: 1.6rem;
+}
+/* Village-Franchise Section's CSS Ended */
+
+
+/* Franchise Opening Soon Section's CSS Started */
+.Express-opening{
+    padding: 60px 60px;
+}
+.franchise-opening-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.opening-heading{
+    text-align: center;
+    font-size: 5rem;
+    font-family: butler;
+}
+.opening-futurak{
+    font-family: futurak;
+    font-weight: 300;
+    font-size: 5rem;
+}
+.opening-soon{
+    font-size: 2.5rem;
+    font-family: inter;
+    font-weight: 500;
+}
+.opening-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 230px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+}
+.soon-txt{
+    color: var(--red);
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-family: apercu;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 10px 0px;
+
+}
+.soon-txt2{
+    font-family: inter;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.soon-txt3{
+    font-size: 2rem;
+    font-family: butler;
+    font-weight: 300;
+}
+.soon-txt4{
+    margin-top: 10px;
+    font-family: butler;
+    font-size: 2rem;
+}
+
+/* Franchise Opening Soon Section's CSS Ended */
+
+
+/* Social Feed Section's CSS Started */
+
+
+.socialfeed-container{
+    padding: 10px 10px;
+}
+
+.feed-txt{
+    text-align: center;
+    font-family: butler;
+    font-size: 3.3rem;
+}
+.socialfeed-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.feed-img{
+    width: 232px;
+}
+/* Social Feed Section's CSS Ended */
+
+
+/* Footer CSS Started */
+.footer-container { 
+  background-color: var(--dimlightblack);
+  padding-top: 80px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-s-image{
+    position: absolute;
+    left: 10px;
+    top: 190px;
+    height: 80vh;
+    z-index: 0;
+
+}
+.footer-content{
+    z-index: 1;
+    flex: 1 1 350px;
+  max-width: 400px;
+
+}
+
+.footer-content-two,
+.footer-content-three,
+.footer-content-four {
+  flex: 1 1 250px; 
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-para {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--gray);
+  font-family: apercu;
+  padding: 20px 5px;
+}
+
+.footer-txt {
+  text-decoration: none;
+  color: var(--gray);
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 20px;
+  font-family: apercu;
+  margin-left: 5px;
+
+
+}
+
+.margin-right {
+  margin-right: 8px;
+}
+
+.footer-content-two,
+.footer-content-three {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content-txt {
+  width: fit-content;
+  font-size: 1.6rem;
+  font-family: apercu;
+  text-decoration: none;
+  color: var(--gray);
+  margin: 8px 0;
+}
+
+.ftr-heading {
+  font-size: 1.5rem;
+  font-family: butler;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.ftr-heading-txt {
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+
+.ftr-txt {
+  font-size: 1.5rem;
+  color: var(--gray);
+  font-family: apercu;
+  padding: 10px 0;
+}
+
+.follow-us-txt {
+  margin-bottom: 20px;
+}
+
+.ftr-facebook {
+  background-color: var(--red);
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-size: 1.8rem;
+}
+
+.ftr-a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.ftr-span {
+  background-color: var(--red);
+  padding: 10px 12px;
+  border-radius: 30px;
+  font-size: 1.8rem;
+}
+
+.span-margin-right {
+  margin-right: 5px;
+}
+.app-downloads{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Footer CSS Ended */
+
+
+
+/* Copyrights CSS Started  */
+.copy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+.copy-text{
+    font-size: 1.4rem;
+    font-family: inter;
+    text-decoration: none;
+    color: var(--white);
+}
+/* Copyrights CSS Ended */

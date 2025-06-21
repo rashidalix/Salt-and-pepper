@@ -22,20 +22,21 @@ body{
 }
 @font-face {
     font-family: apercu;
-    src: url(style/Apercu-font/Apercu-regular.otf);
+    src: url(Apercu-regular.otf);
 }
 @font-face {
     font-family: butler;
-    src: url(style/bulter-font/Butler_Light.otf);
+    src: url(Butler_Light.otf);
 }
 @font-face {
     font-family: futurak;
-    src: url(style/futurak.ttf);
+    src: url(futurak.ttf);
 }
 @font-face {
     font-family: inter;
-    src: url(style/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(Inter-VariableFont_opsz\,wght.ttf);
 }
+
 body{
     background-color:var(--black);
 }
@@ -48,6 +49,11 @@ body a{
     height: 80px;
     cursor: pointer;
 }
+.nav-bars{
+    display: none;
+}
+.nav-close
+{display: none;}
 header{
     background-color: var(--black);
 }
@@ -103,6 +109,38 @@ nav{
     background-color: var(--white);
     color: var(--red);
     border-radius: 50px;
+}
+@media (max-width:1024px){
+    nav{
+        padding: 10px 10px;
+        
+    }
+    .nav-item, .franchise-btn{
+        display: none;
+    }
+    .nav-bars{
+        display: block;
+        font-size: 2rem;
+
+    }
+    .order-btn{
+    font-size: 1.2rem;
+    padding: 15px 15px;
+    
+}
+    .nav-logo {
+    position: relative;
+  }
+.logo-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    width: 100px;
+    height: auto;
+  }
+    
+    
 }
 /* Header Ended */
 
@@ -171,6 +209,36 @@ nav{
     border-radius: 50px ;
     cursor: pointer;
 }
+
+@media (max-width: 1024px) {
+    .brand-container{
+        width: 100%;
+        height: 50vh;
+    }
+    
+  .brand-order-section {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+
+  .brand-img {
+    width: 100%;
+    height: 150px;
+    padding: 0;
+  }
+
+  .brand-order-btn {
+    width: 90%;
+    height: 50px;
+    font-size: 1.1rem;
+    margin: 12px auto 0;
+  }
+}
+
+
 /* Brand Section's CSS Ended */
 
 
@@ -364,6 +432,43 @@ nav{
     transform: rotate(-35deg);
 
 }
+
+
+@media (max-width: 1024px) {
+  .exress-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .express-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.33% - 20px);
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  .express-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .express-h1-text {
+    text-align: center;
+  }
+
+  .express-contact {
+    width: 100%;
+    padding: 0 10px 20px;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
 /* Express Section's CSS Ended */
 
 
@@ -386,8 +491,10 @@ nav{
 }
 .village-franchise-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap:10px
+    gap:20px
 }
 .village-right{
     display: flex;
@@ -456,10 +563,16 @@ nav{
 
 /* Franchise Opening Soon Section's CSS Started */
 .Express-opening{
-    padding: 60px 60px;
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .franchise-opening-container{
     display: flex;
+    width: 100%;
+    max-width: 1200px;
+    
     justify-content: space-evenly;
     gap: 20px;
     flex-wrap: wrap;

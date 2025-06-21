@@ -23,19 +23,19 @@ body{
 }
 @font-face {
     font-family: apercu;
-    src: url(style/Apercu-font/Apercu-regular.otf);
+    src: url(Apercu-regular.otf);
 }
 @font-face {
     font-family: butler;
-    src: url(style/bulter-font/Butler_Light.otf);
+    src: url(Butler_Light.otf);
 }
 @font-face {
     font-family: futurak;
-    src: url(style/futurak.ttf);
+    src: url(futurak.ttf);
 }
 @font-face {
     font-family: inter;
-    src: url(style/Inter-VariableFont_opsz\,wght.ttf);
+    src: url(Inter-VariableFont_opsz\,wght.ttf);
 }
 body{
     background-color:var(--black);
@@ -428,8 +428,10 @@ nav{
 }
 .village-franchise-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    gap:10px
+    gap:20px
 }
 .village-right{
     display: flex;

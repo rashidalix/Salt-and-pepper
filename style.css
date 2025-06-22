@@ -251,6 +251,9 @@ nav{
     padding: 60px 60px;
     background-color: var(--dimlightblack);
     height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .franchise-bg-img{
     position: absolute;
@@ -320,9 +323,9 @@ nav{
 
 .franchise-content{
     display: flex;
+    flex-direction: row;
     width: 100%;
     gap: 20px;
-    flex-wrap: wrap;
     margin-top: 50px;
 
 }
@@ -330,23 +333,27 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    flex-grow: 1;
 
 
 }
-.franchise-images{
-    flex-grow:1;
+.franchise-details,
+.franchise-images {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.franchise-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .franchise-image{
-    width: 100%;
-    height: auto;
-    object-fit: contain;
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.faisalabad-layout .franchise-images {
-    width: 255px;
-}
+
 /* Franchise Section's CSS Completed */
 
 
